@@ -24,11 +24,14 @@ public class LineProblem {
         System.out.println("Length Of Line1 " + lengthOfLine1);
         System.out.println("Length Of Line2 " + lengthOfLine2);
 
-        if (lengthOfLine1 == lengthOfLine2) {
+        Double length1= lengthOfLine1;
+        Double length2= lengthOfLine2;
+
+        if (length1.equals(length2)) {
             System.out.println("Both Line Are Equal");
-        } else if (lengthOfLine1 > lengthOfLine2) {
+        } else if (length1.compareTo(length2) == 1) {
             System.out.println("Line1 is Bigger Than Line2");
-        } else if (lengthOfLine1 < lengthOfLine2) {
+        } else if (length1.compareTo(length2) == -1) {
             System.out.println("Line2 is Bigger Than Line1");
         }
     }
